@@ -1,10 +1,7 @@
 FROM node:latest
 
-RUN echo "Trying to build my first application"
-
-COPY . /var/www
-
-WORKDIR /var/www
+COPY . /app
+WORKDIR /app
 
 RUN npm install
 
